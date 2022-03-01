@@ -1,37 +1,29 @@
 .scoreboard {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	width: 300px;
+	display: grid; /* membuat tampilan scoreboard mjd grid */
+	grid-template-columns: repeat(2, 1fr); /* membuat 2 kolom grid yg sama dimensinya*/
+	width: 500px;
 	font-family: 'Quicksand', sans-serif;
 }
-
-.scoreboard__name,
-.scoreboard__score {
+.scoreboard__name, .scoreboard__score {
 	padding: 10px;
 	text-align: center;
 }
-
 .scoreboard__name {
 	font-weight: bold;
 	border-bottom: 1px solid #ddd;
 }
-
 .scoreboard__name--one {
-	color: #009578;
+	color: red;
 }
-
 .scoreboard__name--two {
-	color: #2d0095;
+	color: blue;
 }
-
 .scoreboard__score {
 	font-size: 2em;
 }
-
 .scoreboard__controls {
 	display: flex;
 }
-
 .scoreboard__control-button {
 	flex-grow: 1;
 	border: none;
@@ -39,11 +31,9 @@
 	cursor: pointer;
 	font-size: 1.2em;
 }
-
 .scoreboard__control-button:hover {
 	background: #ddd;
 }
-
 .scoreboard__control-button:active {
 	background: #ccc;
 }
